@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld />
+    <CheckboxDemo />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CheckboxDemo from './components/CheckboxDemo'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CheckboxDemo
   }
 }
 </script>

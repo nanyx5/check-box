@@ -4,13 +4,13 @@
       <i-form-item label="用户名" prop="name">
         <i-input v-model="formValidate.name"></i-input>
       </i-form-item>
-
       <i-form-item label="邮箱" prop="mail">
         <i-input v-model="formValidate.mail"></i-input>
       </i-form-item>
     </i-form>
     <button @click="handleSubmit">提交</button>
     <button @click="handleReset">重置</button>
+    <i-checkbox>选项1</i-checkbox>
   </div>
 </template>
 
@@ -18,8 +18,9 @@
 import iForm from './form/form.vue'
 import iFormItem from './form/form-item.vue'
 import iInput from './input/input.vue'
+import iCheckbox from './checkbox/checkbox.vue'
 export default {
-  components: { iForm, iFormItem, iInput },
+  components: { iForm, iFormItem, iInput, iCheckbox },
   name: 'HelloWorld',
   data () {
     return {
